@@ -1,6 +1,6 @@
 import os
 import shutil
-from turtle import delay
+import time
 
 # Define Const
 RESULT_PATH = "result/"
@@ -34,7 +34,7 @@ os.system('clear')
 os.system("printf '\033[3J'")
 print("Clear target directory")
 os.system('rm -rf {0}'.format(RESULT_PATH))
-delay(2000)
+time.sleep(2)
 
 # Start Compile
 print("Main Compile start......")
